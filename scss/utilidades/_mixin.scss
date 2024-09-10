@@ -1,0 +1,11 @@
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 3px 15px gray;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid rgb(90, 85, 85);
+    border-radius: 30px;
+    overflow: hidden;
+
+}

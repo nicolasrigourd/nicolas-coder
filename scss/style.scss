@@ -1,0 +1,149 @@
+@import "utilidades/reset";
+@import "utilidades/colores";
+@import "utilidades/mixin";
+
+
+
+                         /* SECCION HEADER*/
+@import "utilidades/nesting";
+
+                         /* SECCION MAIN*/
+
+ h1{
+    text-align: center;
+    margin: 15px 0 15px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color:$color-primario;
+}
+h2{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $color-primario;
+}
+h3{
+    font-size: 1rem;
+    }
+.home{
+      img{
+         width: 90vw;
+         margin-left: 15px;
+        }  
+     }                     
+     .portada-dos{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+        h2{
+            font-size: 2.5rem;
+            font-family: fantasy;
+            font-weight: 200;
+            color: rgb(247, 35, 35);
+            margin: 10px 0px 10px 0px;;
+        }
+        p{
+            font-weight: 200; 
+        }
+    }
+    .grilla-juegos{
+        display: grid;
+        margin-left: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr 1fr 1fr;
+    }
+    
+    
+
+.card{
+    width: 210px;
+    height: 220px;
+    @include flex;
+}
+    button {
+        background-color:white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5rem;
+        color:$color-primario;
+        padding: 6px;
+        border: 1px solid red;
+       }
+       button:hover{
+    
+        background-color: rgb(238, 40, 40);
+        border: 3px solid red;
+        color:white;
+        font-weight: 700;
+        border: none;
+        border-bottom: 1px solid rgb(238, 40, 40);
+    }
+    .consolas{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 20px;
+        border-bottom: 1px solid black;
+        p{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+       
+    }
+    .videos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h2{
+            margin-top: 15px;
+        }
+        iframe{
+            margin-top: 20px;
+        }
+        .switch-dos{
+            color: blue;
+            font-size: 2rem;
+        }
+    }
+    
+                             /* SECCION FOOTER*/
+    .footer{
+
+        background-color:$color-primario;
+        text-align: center;
+        color:whitesmoke;
+        font-weight: 400;
+        padding: 15px;
+        border-top: 5px black;
+        margin-top: 15px;
+        }
+                               /*MEDIA QWERTY*/
+                       
+    @media screen and (min-width:768px){
+  
+        .grilla-juegos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            margin-left: 60px;
+        }
+    }
+    
+        
+                        /* MEDIA QWERTY DESKTOP*/
+    
+     @media screen and (min-width:1024px) {
+     
+    .grilla-juegos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+    }
+    }
+    
+    
