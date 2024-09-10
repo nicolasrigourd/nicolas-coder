@@ -40,8 +40,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
   color: #FF000A;
@@ -54,6 +54,11 @@ h3 {
 .home img {
   width: 90vw;
   margin-left: 15px;
+  margin-bottom: 20px;
+}
+.home h3 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .portada-dos {
@@ -154,8 +159,22 @@ button:hover {
   margin-top: 15px;
 }
 
-/*MEDIA QWERTY*/
+/*MEDIA QWERY*/
 @media screen and (min-width: 768px) {
+  .home img {
+    max-width: 760px;
+    max-height: 800px;
+  }
+  .img-2 {
+    max-width: 760px;
+    max-height: 800px;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .grilla-juegos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -163,8 +182,18 @@ button:hover {
     margin-left: 60px;
   }
 }
-/* MEDIA QWERTY DESKTOP*/
+/* MEDIA QWERY DESKTOP*/
 @media screen and (min-width: 1024px) {
+  .home img {
+    max-width: 1200px;
+    max-height: 650px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
   .grilla-juegos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
